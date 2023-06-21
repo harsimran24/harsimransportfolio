@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsimran - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(2, 2, 45);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(88, 49, 49);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+
+            color: rgb(169, 210, 44);
+            font-size: medium;
+        }
+
+        .left {
+            font-size: larger;
+        }
+
+        .right {
+            font-size: smaller;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 60px 0;
+
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            width: 60%;
+            margin: 20px 0;
+            font-size: 1.9rem;
+        }
+
+        .leftsection hr {
+            border: 0px;
+            width: 40%;
+            background-color: rgb(122, 122, 227);
+            height: 1px;
+            margin: 20px 84px;
+
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background-color: rgb(100, 7, 83);
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightsection {
+            /*background-color: black;*/
+            width: 50%;
+        }
+
+        .rightsection img {
+            /*  background-size: cover;
+            background-position: center;
+            display: flex;*/
+
+            width: 40%;
+            margin: 20px 0;
+            border: 1px solid #e0c335;
+            /* Add a border around the image */
+            border-radius: 4px;
+            box-shadow: 0 0px 20px rgba(189, 28, 28, 0.1);
+            filter: brightness(80%);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            transition: transform 0.3s ease;
+
+            transition: border-color 0.3s ease;
+
+            border: 1px solid #ccc;
+            /* Add a border */
+            transform: rotate(+0deg);
+            /* Rotate the image slightly */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(37, 159, 47, 0.1);
+            border-radius: 20%;
+
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            /* Enlarge the image on hover */
+            border-color: rgb(122, 122, 227);
+        }
+
+
+
+        .purple {
+            color: blueviolet;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .secondsection {
+            /* max-width: 80vw;
+            margin: auto;*/
+
+            height: max-content;
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+        }
+
+        .leftssection {
+            margin: 10px;
+            /* background-color: brown;*/
+            font-size: large;
+            height: max-content;
+
+        }
+
+        .rightssection {
+            margin: 10px;
+            /* background-color: brown;*/
+            font-size: large;
+            height: max-content;
+        }
+
+        .secondsection>div {
+            width: 30%;
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(122, 122, 227);
+            height: 0.5px;
+            margin: 20px 54px;
+        }
+
+        .secondsection h1 {
+            font-size: 1.7rem;
+        }
+
+        .leftssection hr {
+            border: 0px;
+            width: 40%;
+            background-color: rgb(122, 122, 227);
+            height: 1px;
+            margin: 20px 84px;
+
+        }
+
+        .rightssection hr {
+            border: 0px;
+            width: 40%;
+            background-color: rgb(122, 122, 227);
+            height: 1px;
+            margin: 20px 84px;
+
+        }
+
+        footer {
+            background-color: rgb(88, 49, 49);
+            height: 70px;
+            color: white;
+            padding: 50px 50px;
+            text-align: center;
+        }
+
+        .footer {
+            display: flex;
+            margin: 40px 50px;
+            justify-content: space space-evenly;
+            text-align: left;
+        }
+
+        .footer>div {
+            width: 200px;
+        }
+
+        .footer .rights {
+            text-align: center;
+            padding: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Harsimran's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li> <a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/"> Services</a></li>
+                    <li><a href="/"> Projects</a></li>
+                    <li><a href="/"> Contact me</a></li>
+
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Myname is <br><span class="purple">Harsimran Singh Dhillon</span> , I'm a
+
+                <span id="element"></span><br>
+                <br>
+                <div class="buttons">
+                    <button class="btn">Github</button>
+                    <button class="btn">LinkedIn</button>
+                </div>
+
+
+
+            </div>
+            <div class="rightsection">
+                <img src="hsd.png" alt=" ">
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondsection">
+            <div class="leftssection">
+                <h1>PROFESSIONAL SKILLS</h1> <br>
+                <span class="purple"> Languages</span> : C, C++, Python <br>
+                <br>
+                <span class="purple"> Tools</span> : Linux, LinkedIn, Github, HTML, CSS, Javascript, Bootstrap, Data
+                Structures, SQL&PL/SQL,
+                MATLAB, RStudio, VS Code
+                <br>
+                <hr><br>
+                <h1>PROJECTS</h1><br>
+                <span class="purple"> Drone Face Recognition project </span>: (on going)
+                Technologies used: Drone Hardware | AI/ML . Face recognition through camera in the drone
+                using various AI/ML libraries. <br> <br>
+                <span class="purple">Electric Buggy</span> :
+                Technologies used: Arduino | X-Bee | IR & Ultrasonic Sensors. Autonomous vehicle with wireless
+                supervisory control from a remote station and safely coexists with other vehicles. <br> <br>
+                <span class="purple">To-Do List</span> :
+                This is a simple and subtle application created by using JavaScript, HTML, CSS. <br><br>
+                <span class="purple"> Mangonel </span>:
+                Technologies used: Arduino | IR Sensors | Autodesk Eagle. Special type of mangonel used to
+                throw large stones | Based on excel for projectile dynamics under practical conditions
+                <br>
+
+
+
+
+            </div>
+
+            <div class="rightssection">
+                <h1>EDUCATION</h1> <br>
+                <span class="purple"> 2020 - 2024 </span> | Thapar Institute of engineering and technology, Patiala
+                Bachelor of Engineering - Computer Engineering CGPA : 8.41
+                <br> <br>
+                <span class="purple"> 2019 - 2020 </span> | The Senior Study II, Amritsar
+                Class 12th | Percentage : 94.2%
+                <br> <br>
+                <span class="purple"> 2017 - 2018 </span> | Holy Heart Presidency School, Amritsar
+                Class 10th | Percentage : 91%
+                <br>
+                <hr><br>
+
+                <h1>EXPERIENCE</h1> <br>
+                <span class="purple">VIRSA - Cultural Society </span>:
+                Currently working as a core member in the society in the tech and event management part.
+                Helped in the various events being organized by the society.
+                <br>
+                <hr><br>
+
+                <h1>ACHIEVEMENTS</h1><br>
+
+                <span class="purple"> Scholorship </span>in the 12th standard. <br> <br>
+                <span class="purple">SSB Qualified</span> - Indian Army (Technical Entry Scheme)
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+    <footer>
+        <div class="flex">
+            <div class="first">
+                <h3>Harsimran's Developer Portfolio</h3>
+            </div>
+        </div>
+
+        <div class="rights">
+            www.harsimransportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Software Developer',],
+            typeSpeed: 50,
+        });
+    </script>
+
+
+</body>
+
+</html>
